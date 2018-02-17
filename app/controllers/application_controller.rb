@@ -37,7 +37,7 @@ class ApplicationController < Sinatra::Base
     @post.content = params[:content]
     @post.save
 
-    redirect '/posts/:id'
+    erb :show
   end
 
 end
